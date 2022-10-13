@@ -21,9 +21,7 @@ const getBLogs = () => {
                   return { ...doc.data(), id: doc.id }
                 })
                 posts.value = docs
-              })
-
-            return { posts }
+              })            
             
             // const res = await projectFirestore.collection('posts')
             //         .orderBy('createdAd', 'desc')
@@ -35,6 +33,8 @@ const getBLogs = () => {
             //     return { ...doc.data(), id: doc.id }
             // })
             
+            return { posts }
+
             }
         catch(err) {            
             error.value = err.message

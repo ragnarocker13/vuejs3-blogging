@@ -3,9 +3,13 @@
         <div v-if="error">{{ error }}</div>
         <div v-if="post" class="post">
             <h2>{{ post.title }}</h2>
-            <span v-for="tag in post.tags">
-                #{{ tag }}&nbsp;
+
+            <span class="tags" v-for="tag in post.tags" :key="tag">                
+                <router-link :to="{ name: 'tags', params: { tag: tag }}">
+                    #{{ tag }}&nbsp;
+                </router-link>             
             </span>
+
             <h5>by {{ post.author }} | {{ post.createdAd }}</h5>
             <p>{{ post.body }}</p>
             <div class="deleteButtonContainer">
@@ -16,12 +20,13 @@
 </template>
 
 <script>
+import { projectFirestore } from '@/firebase/config'
 import { ref } from 'vue'
 import { useRoute } from 'vue-router'
 import getBlog from '../composables/getBlog'
 import Button from '@/components/Button.vue'
-import { projectFirestore } from '@/firebase/config'
 import router from '@/router'
+import TagCloud from '@/components/TagCloud.vue'
 
 export default {
     props: ["id"],
@@ -47,7 +52,7 @@ export default {
 
         return { post, error, date, handleDelete };
     },
-    components: { Button }
+    components: { Button, TagCloud }
 }
 </script>
 
@@ -60,6 +65,19 @@ export default {
 
 .blogContainer span {
     font-weight: bold;
+}
+
+.blogContainer span a {
+    text-decoration: none;
+    color: #444;
+}
+
+.blogContainer span a.router-link-active {
+    color: rgb(10, 190, 190);
+}
+
+.blogContainer span a:hover {
+    color: rgb(10, 190, 190);
 }
 
 .deleteButtonContainer {

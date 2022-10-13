@@ -49,7 +49,7 @@ export default {
                 tags: tags.value,
                 // imported and added in firebase/config.js
                 createdAd: timestamp()
-            }
+                }
 
             // await fetch('http://localhost:3333/posts', 
             // // This second parameter will accept arguments of our post request

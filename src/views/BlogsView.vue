@@ -2,17 +2,19 @@
   <h1>OUR BLOGS</h1>
   <BlogList :posts='posts' class='bloglist'/>
 
+  <TagCloud :posts="posts" />
+
 </template>
 
 <script>
-
 import BlogList from '../components/BlogList.vue'
 import getBlogs from '../composables/getBlogs.js'
+import TagCloud from '../components/TagCloud.vue'
 
 export default {
 
  name: 'BlogsView',
- components: { BlogList },
+ components: { BlogList, TagCloud },
  setup() {
 
     // DESTRUCTURE or extract the variables from getPosts composable

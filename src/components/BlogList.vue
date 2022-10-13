@@ -6,14 +6,15 @@
           </router-link>
           <p class="postBody">{{ post.body.substring(0,150) + '...' }}</p>
         </div>
-    </div>
+    </div>   
+    
 </template>
 
 <script>
-import { computed } from 'vue'
 
 export default {
     props: ['posts'],
+    components: { },
     setup() {
         
     }

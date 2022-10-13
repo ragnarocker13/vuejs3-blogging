@@ -5,7 +5,7 @@ import ContactView from '../views/ContactView.vue'
 import BlogsView from '../views/BlogsView.vue'
 import BlogPostView from '../views/BlogPostView.vue'
 import CreatePost from '../views/CreatePostView.vue'
-import RealtimeView from '../views/RealTimeView.vue'
+import TagView from '../views/TagView.vue'
 
 const routes = [
   {
@@ -34,9 +34,9 @@ const routes = [
     component: CreatePost
   },
   {
-    path: '/realtime',
-    name: 'realtime',
-    component: RealtimeView
+    path: '/tags/:tag',
+    name: 'tags',
+    component: TagView
   },  
   {
     path: '/blogs/:id',
