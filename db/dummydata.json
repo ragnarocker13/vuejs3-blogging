@@ -1,0 +1,68 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "author": "Jason Gruspe",
+      "title": "Welcome to the new blog",
+      "body": "Ab mollitia iure quidem illo nesciunt quas blanditiis commodi hic voluptate. Mollitia sint dolorem eum porro officiis architecto consectetur nulla delectus ad, vel, qui error tenetur nemo, veritatis aperiam iure veniam perspiciatis eveniet ratione facere voluptatem. Eaque consequatur ipsam nobis reprehenderit assumenda, tenetur explicabo tempora quaerat quasi velit, sed ullam omnis expedita, nulla sequi nemo.",
+      "tags": [
+        "webdev",
+        "coding",
+        "news"
+      ]
+    },
+    {
+      "id": 2,
+      "author": "Grace Gruspe",
+      "title": "Top 5 CSS Tips",
+      "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere ut vel eligendi exercitationem pariatur quia reiciendis, commodi dolore tempore tenetur modi nam suscipit debitis. Ab mollitia iure quidem illo nesciunt quas blanditiis commodi hic voluptate.",
+      "tags": [
+        "css",
+        "coding",
+        "webdev"
+      ]
+    },
+    {
+      "id": 3,
+      "author": "Jason Gruspe",
+      "title": "Best SEO Practices",
+      "body": "Businesses are increasingly leveraging automation tools to streamline their processes, power their digital marketing strategies and respond to customer reviews. With the proliferation of automation software that promises fast, “personalized” responses.",
+      "tags": [
+        "SEO",
+        "coding",
+        "webdev"
+      ]
+    },
+    {
+      "id": 4,
+      "author": "Pauline Geluz",
+      "title": "Reputation Management for Beginners",
+      "body": "We’re proud to announce that Rize Reviews has more detailed online audit reports for competitor analysis, giving clients greater insight into how they stack up against competitors in terms of online.",
+      "tags": [
+        "ORM",
+        "SEO"
+      ]
+    },
+    {
+      "id": 5,
+      "author": "Grace Gruspe",
+      "title": "What is the Best Digital Marketing Tool",
+      "body": "Companies rebrand to reposition themselves in the market and grow their business. So, what is rebranding? Rebranding is changing the corporate image and perception of customers and the general public.",
+      "tags": [
+        "DM",
+        "SEO"
+      ]
+    },
+    {
+      "title": "The Quick Brown",
+      "author": "Pauline Geluz",
+      "body": "Now you can browse privately, and other people who use this device won’t see your activity. However, downloads, bookmarks and reading list items will be saved. Learn more\n\nChrome won’t save the following information:\nYour browsing history\nCookies and site data\nInformation entered in forms\nYour activity might still be visible to:\nWebsites that you visit\nYour employer or school\nYour Internet service provider\nBlock third-party cookies\nWhen on, sites can't use cookies that track you across the web. Features on some sites may break.\n",
+      "tags": [
+        "html",
+        "css",
+        "php"
+      ],
+      "id": 6
+    }
+  ]
+}
